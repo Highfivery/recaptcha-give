@@ -1,6 +1,6 @@
 <?php
 /**
- * reCAPTCHA for Give plugin
+ * GiveWP - reCAPTCHA Integration
  *
  * @package    reCAPTCHAGive
  * @subpackage WordPress
@@ -10,10 +10,10 @@
  * @license    GPL-2.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:       reCAPTCHA for Give
+ * Plugin Name:       GiveWP - reCAPTCHA Integration
  * Plugin URI:        https://www.highfivery.com/projects/recaptcha-give/
  * Description:       Quickly & easily integrate Google reCAPTCHA into your GiveWP donation forms to help prevent spam and fraudulent transactions.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.3
  * Author:            Highfivery LLC

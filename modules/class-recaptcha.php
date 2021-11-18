@@ -29,7 +29,6 @@ class ReCAPTCHA {
 
 		// Processes the form.
 		add_action( 'give_checkout_error_checks', array( $this, 'process_form' ), 10, 2 );
-
 	}
 
 	/**

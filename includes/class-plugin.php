@@ -27,8 +27,7 @@ class Plugin {
 	 */
 	private function __construct() {
 		$this->register_autoloader();
-
-		add_action( 'init', array( $this, 'init' ), 0 );
+		$this->init_modules();
 	}
 
 	/**
@@ -52,21 +51,18 @@ class Plugin {
 	}
 
 	/**
+	 * Initializes modules
+	 */
+	public function init_modules() {
+		new \ReCAPTCHA_Give\Modules\ReCAPTCHA();
+		new \ReCAPTCHA_Give\Core\Admin\Admin();
+	}
+
+	/**
 	 * Init
 	 */
 	public function init() {
 		$this->init_components();
-	}
-
-	/**
-	 * Init components
-	 */
-	private function init_components() {
-		new \ReCAPTCHA_Give\Modules\ReCAPTCHA();
-
-		if ( is_admin() ) {
-			new \ReCAPTCHA_Give\Core\Admin\Admin();
-		}
 	}
 }
 
